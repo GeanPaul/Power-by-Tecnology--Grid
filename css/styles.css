@@ -1,0 +1,79 @@
+/* Variables*/
+:root {
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* utilidades*/
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--Very-Dark-Blue);
+  font-weight: 600;
+  font-size: 1.3em;
+}
+.textos-tecnologys {
+  color: var(--Grayish-Blue);
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+/* Contenedor General*/
+.wrapper {
+  padding: 60px 30px;
+  border: 1px solid orange;
+  background-color: var(--Very-Light-Gray);
+}
+
+/* Seccion Powered by technology*/
+
+.power-tecnology {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.power-tecnology h1 {
+  font-size: 1.6em;
+  font-weight: 600;
+  margin: 0;
+  color: var(--Very-Dark-Blue);
+}
+.power-tecnology h2 {
+  margin-bottom: 0;
+  font-weight: 300;
+  color: var(--Very-Dark-Blue);
+  font-size: 1.6em;
+}
+.power-tecnology p {
+  color: var(--Grayish-Blue);
+  font-size: 1em;
+}
+
+/*Seccion de las Cards*/
+.supervisor {
+  border-top: 4px solid var(--Cyan);
+}
+.card {
+  padding: 25px 30px;
+  border-radius: 6.4px;
+  background: #ffffff;
+}
+
+.tecnologys {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+}
