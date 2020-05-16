@@ -26,20 +26,15 @@ h3 {
   font-weight: 600;
   font-size: 1.3em;
 }
-.textos-tecnologys {
-  color: var(--Grayish-Blue);
-  font-size: 0.8em;
-  margin-top: 5px;
-}
+
 /* Contenedor General*/
 .wrapper {
-  padding: 60px 30px;
+  padding: 65px 30px 80px;
   border: 1px solid orange;
   background-color: var(--Very-Light-Gray);
 }
 
 /* Seccion Powered by technology*/
-
 .power-tecnology {
   text-align: center;
   margin-bottom: 80px;
@@ -58,22 +53,54 @@ h3 {
 }
 .power-tecnology p {
   color: var(--Grayish-Blue);
+  line-height: 1.7;
   font-size: 1em;
 }
 
-/*Seccion de las Cards*/
-.supervisor {
-  border-top: 4px solid var(--Cyan);
+/* TRABAJANDO CON GRID*/
+.tecnologys {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
 }
+
+/* Estilos a las card's*/
 .card {
   padding: 25px 30px;
   border-radius: 6.4px;
   background: #ffffff;
 }
 
-.tecnologys {
-  display: grid;
-  gap: 25px;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, auto);
+/* Clases para los bordes de colores de las card's*/
+.supervisor {
+  border-top: 4px solid var(--Cyan);
+}
+.karma {
+  border-top: 4px solid var(--Orange);
+}
+.builder {
+  border-top: 4px solid var(--Red);
+}
+.calculator {
+  border-top: 4px solid var(--Blue);
+}
+/*Seccion de las Cards*/
+.card {
+  padding: 25px 25px;
+  border-radius: 6.4px;
+  background: #ffffff;
+}
+.textos-tecnologys {
+  color: var(--Grayish-Blue);
+  font-size: 0.9em;
+  line-height: 1.8;
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+.card span {
+  display: block;
+  text-align: right;
+  margin: 26px 0 0;
 }
