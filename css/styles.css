@@ -16,6 +16,8 @@ body {
   box-sizing: border-box;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
+
+  background-color: var(--Very-Light-Gray);
 }
 
 /* utilidades*/
@@ -30,7 +32,6 @@ h3 {
 /* Contenedor General*/
 .wrapper {
   padding: 65px 30px 80px;
-  border: 1px solid orange;
   background-color: var(--Very-Light-Gray);
 }
 
@@ -43,11 +44,13 @@ h3 {
   font-size: 1.6em;
   font-weight: 600;
   margin: 0;
+  text-align: center;
   color: var(--Very-Dark-Blue);
 }
 .power-tecnology h2 {
   margin-bottom: 0;
   font-weight: 300;
+  text-align: center;
   color: var(--Very-Dark-Blue);
   font-size: 1.6em;
 }
@@ -55,21 +58,16 @@ h3 {
   color: var(--Grayish-Blue);
   line-height: 1.7;
   font-size: 1em;
+  text-align: center;
 }
-
-/* TRABAJANDO CON GRID*/
-.tecnologys {
-  display: grid;
-  gap: 25px;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, auto);
-}
-
 /* Estilos a las card's*/
 .card {
   padding: 25px 30px;
   border-radius: 6.4px;
   background: #ffffff;
+  -webkit-box-shadow: 3px 13px 37px -19px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 13px 37px -19px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 13px 37px -19px rgba(0, 0, 0, 0.75);
 }
 
 /* Clases para los bordes de colores de las card's*/
@@ -103,4 +101,48 @@ h3 {
   display: block;
   text-align: right;
   margin: 26px 0 0;
+}
+
+/* TRABAJANDO CON GRID*/
+.tecnologys {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    padding: 200px 150px 80px;
+  }
+  .tecnologys {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 100px);
+  }
+
+  .supervisor {
+    grid-row: 2 /4;
+  }
+  .builder {
+    grid-column: 2/ 3;
+    grid-row: 1 /3;
+  }
+  .calculator {
+    grid-row: 2 /4;
+    grid-column: 3/4;
+  }
+  .karma {
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
+  .power-tecnology h1 {
+    font-size: 2.5em;
+  }
+  .power-tecnology h2 {
+    font-size: 2.5em;
+  }
+  .power-tecnology p {
+    padding: 0 290px;
+    font-size: 1.1em;
+  }
 }
